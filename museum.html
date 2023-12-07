@@ -59,7 +59,7 @@
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
       }
 
-      button {
+      .button {
         transition-duration: 0.4s;
         background-color: #e86c49; /* Green */
         border: none;
@@ -87,6 +87,7 @@
 
       #player-btn {
         background-color: #e84949; /* Green */
+        display: none;
       }
 
       #player {
@@ -114,8 +115,7 @@
   </head>
 
   <body>
-
-    <button id="player-btn" onclick="document.getElementById('player').play()">Click me first to set the mood</button>
+    <p">Don't hear the music ? Click <button onclick="document.getElementById('player').play()"> me </button> first to set the mood.</p>
     <audio id="player" controls autoplay>
       <source src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Vivaldi_-_Four_Seasons_1_Spring_mvt_1_Allegro_-_John_Harrison_violin.oga" type="audio/ogg">
       </audio>
@@ -123,34 +123,31 @@
 
       <table class=buttons>
         <tr>
-          <td> <button onclick="show_image('images/rhys-claims-hes-perfect.png')">Rhys Claims He's Perfect (May 2023)</button></td>
-          <td> <button onclick="show_image('images/rhys-admits-his-pr-isnt-perfect.png')">Rhys Admits His PR Isn't Perfect (July 2023)</button> </td>
-          <td> <button onclick="show_image('images/rhys-admits-his-pr-isnt-perfect.png')">Rhys Admits His PR Isn't Perfect (July 2023)</button> </td>
+          <td> <button class='button' onclick="show_image('images/rhys-claims-hes-perfect.png')">Rhys Claims He's Perfect (May 2023)</button></td>
+          <td> <button class='button' onclick="show_image('images/rhys-admits-his-pr-isnt-perfect.png')">Rhys Admits His PR Isn't Perfect (July 2023)</button> </td>
+          <td><button class='button' onclick="show_image('images/rhys-warns-against-danger.png')">Rhys Warns Against Danger (July 2023)</button></td>
         </tr>
         <tr>
-          <td><button onclick="show_image('images/rhys-warns-against-danger.png')">Rhys Warns Against Danger (July 2023)</button></td>
-          <td><button onclick="show_image('images/rhys-claims-he-is-ruby-god.png')">Rhys Claims He Is a Ruby God (August 2023)</button></td>
-          <td><button onclick="show_image('images/rhys-shows-humility-acks-others-work-can-be-good-too.png')">Rhys Achknowledges Others Work Can Be Good Too (August 2023)</button></td>
+          <td><button class='button' onclick="show_image('images/rhys-claims-he-is-ruby-god.png')">Rhys Claims He Is a Ruby God (August 2023)</button></td>
+          <td><button class='button' onclick="show_image('images/rhys-shows-humility-acks-others-work-can-be-good-too.png')">Rhys Achknowledges Others Work Can Be Good Too (August 2023)</button></td>
+          <td> <button class='button' onclick="show_image('images/rhys-still-wont-accept-the-teams-rejoining.png')">Rhys Won't Accept the Teams Rejoining (August 2023)</button> </td>
         </tr>
         <tr>
-          <td><button onclick="show_image('images/rhys-attempts-sign-language.png')">Rhys Attempts Sign Language (September 2023)</button></td>
-          <td><button onclick="show_image('images/rhys-shows-a-softer-side.png')">Rhys Shows a Softer Side (October 2023)</button></td>
-          <td><button onclick="show_image('images/rhys-threatens-to-call-hr.png')">Rhys Threatens to Call HR (October 2023)</button></td>
+          <td><button class='button' onclick="show_image('images/rhys-attempts-sign-language.png')">Rhys Attempts Sign Language (September 2023)</button></td>
+          <td><button class='button' onclick="show_image('images/rhys-shows-a-softer-side.png')">Rhys Shows a Softer Side (October 2023)</button></td>
+          <td><button class='button' onclick="show_image('images/rhys-threatens-to-call-hr.png')">Rhys Threatens to Call HR (October 2023)</button></td>
         </tr>
         <tr>
-          <td><button onclick="show_image('images/rhys-is-an-encyclopedean.png')">Rhys Is a Librarian (November 2023)</button></td>
-          <td><button onclick="show_image('images/rhys-prepares-for-fatherhood.png')">Rhys Prepares for Fatherhood (November 2023)</button></td>
-          <td><button onclick="show_image('images/rhys_exposes_the_illuminati_at_UPS.png')">Rhys Exposes the Illuminati at UPS (November 2023)</button></td>
+          <td><button class='button' onclick="show_image('images/rhys-is-an-encyclopedean.png')">Rhys Is a Librarian (November 2023)</button></td>
+          <td><button class='button' onclick="show_image('images/rhys-prepares-for-fatherhood.png')">Rhys Prepares for Fatherhood (November 2023)</button></td>
+          <td><button class='button' onclick="show_image('images/rhys_exposes_the_illuminati_at_UPS.png')">Rhys Exposes the Illuminati at UPS (November 2023)</button></td>
         </tr>
         <tr>
-          <td><button onclick="show_image('images/rhys-takes-gen-z-to-an-unbearable-new-level.png')">Rhys Takes Gen Z to a New Level (November 2023)</button></td>
-          <td><button onclick="show_image('images/rhys-attempts-to-relate-to-chris-l.png')">Rhys messages Chris L (December 2023)</button></td>
-          <td><button onclick="show_image('images/rhys-embraces-big-tech.png')">Rhys Embraces Big Tech (December 2023)</button></td>
+          <td><button class='button' onclick="show_image('images/rhys-takes-gen-z-to-an-unbearable-new-level.png')">Rhys Takes Gen Z to a New Level (November 2023)</button></td>
+          <td><button class='button' onclick="show_image('images/rhys-attempts-to-relate-to-chris-l.png')">Rhys messages Chris L (December 2023)</button></td>
+          <td><button class='button' onclick="show_image('images/rhys-embraces-big-tech.png')">Rhys Embraces Big Tech (December 2023)</button></td>
         </tr>
       </table>
-
-
-
 
     <div class="popup-image">
       <span onclick="hide_image()">&times;</span>
